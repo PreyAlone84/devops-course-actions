@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import request from "supertest";
-import app from "../src/index.js";
+import app from "../index.js";
 
 describe("GET /ping", () => {
   it("should return pong", async () => {
@@ -9,3 +9,4 @@ describe("GET /ping", () => {
     expect(res.body.message).toBe("pong");
   });
 });
+
